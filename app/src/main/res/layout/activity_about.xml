@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Application"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Student Information -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Developer Profile:"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name: [Your Name]\nStudent ID: [Your ID]\nCourse Code: ICT602\nCourse Name: Mobile Technology and Development\n\n© 2026 All Rights Reserved."
+            android:layout_marginBottom="16dp" />
+
+        <!-- Application GitHub Repository Clickable Link -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Project Repository:"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvGithubLink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text='<a href="https://github.com/noki-hue/Individual">https://github.com/noki-hue/Individual</a>'
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Detailed App Instructions -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How to Use App:"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Select the calculation month from the dropdown spinner.\n2. Key in electricity units used (1 to 1000 kWh).\n3. Adjust slider to set rebate percentage (0% to 5%).\n4. Tap CALCULATE BILL to view instant charges.\n5. Tap SAVE RECORD to save the entry to local SQLite.\n6. Tap VIEW HISTORY to inspect saved entries or remove old records."
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/btnAboutBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BACK" />
+
+    </LinearLayout>
+</ScrollView>
